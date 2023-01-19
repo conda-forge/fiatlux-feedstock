@@ -1,5 +1,5 @@
 {% set name = "fiatlux" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fiatlux-{{ version }}.tar.gz
-  sha256: bc45951e183539387dc26e93bae5eb419eec367069efccdd79e9154ac91e78d8
+  sha256: 104fd05f8543bb21281edcbac531aca30b52bfea5ddaf9e449f28fd595b32066
 
 build:
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   build:
